@@ -1,1 +1,357 @@
+/*==================================================
+    MAGISTERIO PRO
+    Biblioteca Digital
+==================================================*/
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+
+    background:#2f313b;
+
+    background:
+    linear-gradient(rgba(46,48,58,.82),
+                    rgba(46,48,58,.82)),
+    radial-gradient(circle at top,
+                    #5f6474,
+                    #2f313b);
+
+    color:#f4f4f4;
+
+    min-height:100vh;
+
+}
+
+/*==========================================
+            WRAPPER
+==========================================*/
+
+#wrapper{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding-top:70px;
+
+}
+
+/*==========================================
+            HEADER
+==========================================*/
+
+header{
+
+    text-align:center;
+
+}
+
+.logo{
+
+    width:90px;
+
+    height:90px;
+
+    border:1px solid rgba(255,255,255,.7);
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2rem;
+
+    margin-bottom:40px;
+
+}
+
+.logo span{
+
+    letter-spacing:2px;
+
+}
+
+.contenido{
+
+    border-top:1px solid rgba(255,255,255,.4);
+
+    border-bottom:1px solid rgba(255,255,255,.4);
+
+    padding:70px 0;
+
+}
+
+.contenido h1{
+
+    font-size:3rem;
+
+    letter-spacing:12px;
+
+    font-weight:300;
+
+}
+
+.contenido p{
+
+    margin-top:30px;
+
+    letter-spacing:6px;
+
+    font-size:.95rem;
+
+    opacity:.85;
+
+    text-transform:uppercase;
+
+}
+
+/*==========================================
+              MENU
+==========================================*/
+
+nav{
+
+    margin-top:45px;
+
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+nav li{
+
+    flex:1;
+
+    min-width:180px;
+
+}
+
+nav a{
+
+    display:block;
+
+    padding:18px;
+
+    border:1px solid rgba(255,255,255,.45);
+
+    text-decoration:none;
+
+    color:white;
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:.85rem;
+
+    transition:.30s;
+
+}
+
+nav a:hover{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+/*==========================================
+          ARTICULOS
+==========================================*/
+
+article{
+
+    display:none;
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:70px auto;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    backdrop-filter:blur(10px);
+
+    padding:50px;
+
+}
+
+article:target{
+
+    display:block;
+
+}
+
+article h2{
+
+    font-size:2rem;
+
+    margin-bottom:30px;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    font-weight:300;
+
+}
+
+/*==========================================
+       LISTA DOCUMENTOS
+==========================================*/
+
+.documentos{
+
+    list-style:none;
+
+}
+
+.documentos li{
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+}
+
+.documentos a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px;
+
+    transition:.25s;
+
+    letter-spacing:1px;
+
+}
+
+.documentos a:hover{
+
+    background:rgba(255,255,255,.08);
+
+    padding-left:35px;
+
+}
+
+/*==========================================
+      LISTA ARTICULOS
+==========================================*/
+
+.articulos{
+
+    list-style:none;
+
+}
+
+.articulos li{
+
+    border-bottom:1px solid rgba(255,255,255,.10);
+
+}
+
+.articulos a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    transition:.25s;
+
+}
+
+.articulos a:hover{
+
+    background:rgba(255,255,255,.08);
+
+    padding-left:35px;
+
+}
+
+/*==========================================
+          TEXTO
+==========================================*/
+
+article p{
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    color:#eeeeee;
+
+}
+
+/*==========================================
+        RESPONSIVE
+==========================================*/
+
+@media(max-width:900px){
+
+.contenido h1{
+
+font-size:2rem;
+
+letter-spacing:5px;
+
+}
+
+.contenido p{
+
+letter-spacing:2px;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+}
+
+nav li{
+
+width:100%;
+
+}
+
+article{
+
+padding:30px;
+
+}
+
+}
